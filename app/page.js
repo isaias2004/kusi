@@ -1,6 +1,11 @@
 import React from 'react';
 import './globals.css';
 import Image from 'next/image';
+// app/page.js
+import Kilometraje from './components/Kilometraje';
+import Experiencia from './components/Experiencia';
+import Footer from './components/Footer';
+
 
 export const metadata = {
   title: 'Kusi Turismo',
@@ -65,13 +70,20 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <main className="flex flex-col md:flex-row items-center justify-center gap-8 mt-230 w-full mb-20 md:mb-30">
+        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-300 md:mt-280 md:mb-30">
           <Image
             className="rounded-full hidden md:block"
             src="/monte.jpeg"
             alt="monte"
             width={400}
             height={300}
+          />
+          <Image
+            className="rounded-full hidden md:block mt-50 "
+            src="/travelers.png"
+            alt="travelers"
+            width={250}
+            height={250}
           />
           <div className="flex flex-col items-end gap-8 max-w-2xl md:mt-0 mt-60">
             <h1 className="text-4xl font-bold text-right text-gray-800 dark:text-gray-200">Kusi: Turismo Comunitario y Sustentable en Jujuy</h1>
@@ -83,28 +95,9 @@ export default function Home() {
             </a>
           </div>
         </main>
-        <div className="w-full cards">
-          <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4 text-left text-gray-800 dark:text-gray-200">Viajar y transformar realidades es posible</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg text-center">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Turismo sustentable</h3>
-                <p className="text-gray-600 dark:text-gray-300">Diseñamos experiencias a tu medida para que disfrutes al máximo.</p>
-              </div>
-              <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg text-center">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Experiencias únicas</h3>
-                <p className="text-gray-600 dark:text-gray-300">Nuestros guías conocen la región y te llevarán a los mejores lugares.</p>
-              </div>
-              <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg text-center">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Impacto local</h3>
-                <p className="text-gray-600 dark:text-gray-300">Estamos disponibles para ayudarte en cualquier momento.</p>
-              </div>
-            </div>
-          </section>
-          <footer className="text-center text-gray-500 dark:text-gray-400 mt-8">
-            <b>&copy; 2024 | Kusi Turismo.</b> Todos los derechos reservados.
-          </footer>
-        </div>
+        <Experiencia />
+        <Kilometraje />
+        <Footer />
       </div>
     </div>
   );
