@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Kilometraje from './components/Kilometraje';
 import Experiencia from './components/Experiencia';
 import Footer from './components/Footer';
+import Carousel from './components/Carousel';
 
 
 export const metadata = {
@@ -70,14 +71,15 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-300 md:mt-280 md:mb-30">
-          <Image
+        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-200 md:mt-310 md:mb-30">
+          {/* <Image
             className="rounded-full hidden md:block"
             src="/monte.jpeg"
             alt="monte"
             width={400}
             height={300}
-          />
+          />  */}
+          <Carousel />
           <Image
             className="rounded-full hidden md:block mt-50 "
             src="/travelers.png"
