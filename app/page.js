@@ -71,33 +71,19 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-200 md:mt-310 md:mb-30">
-          {/* <Image
-            className="rounded-full hidden md:block"
-            src="/monte.jpeg"
-            alt="monte"
-            width={400}
-            height={300}
-          />  */}
+        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-390 md:mt-310 md:mb-30">
           <Carousel />
-          <Image
-            className="rounded-full hidden md:block mt-50 "
-            src="/travelers.png"
-            alt="travelers"
-            width={250}
-            height={250}
-          />
-          <div className="flex flex-col items-end gap-8 max-w-2xl md:mt-0 mt-60">
-            <h1 className="text-4xl font-bold text-right text-gray-800 dark:text-gray-200">Kusi: Turismo Comunitario y Sustentable en Jujuy</h1>
-            <h2 className="text-right text-gray-700 dark:text-gray-300 max-w-xl">
-                Conectando con la herencia natural y cultural a traves de experiencias que transforman.
+          <div className="flex flex-col w-full items-end gap-3 md:mt-0 relative z-10">
+            <h1 className="text-2xl md:text-4xl font-bold text-right text-gray-200 dark:text-gray-800 uppercase text-shadow-md ">Bienvenidos a <span className='text-[#C77A4E]'>KUSI   </span><br></br> turismo comunitario</h1>
+            <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md ">
+                Acompañáme a conectar con la herencia natural y cultural de Latinoamérica a través de experiencias que transforman.
             </h2>
-            <a href="https://wa.link/9yh9be" target="_blank" rel="noopener noreferrer" className="bg-[#C77A4E] text-white px-6 py-3 rounded-md hover:bg-[#A65E2E] transition uppercase font-semibold w-max">
-              Ver experiencias KUSI en Jujuy
-            </a>
+              <a href="https://wa.link/9yh9be" target="_blank" rel="noopener noreferrer" className="bg-[#C77A4E] text-white px-6 py-3 rounded-md hover:bg-[#A65E2E] transition uppercase font-semibold w-max">
+                Ver experiencias KUSI en Jujuy
+              </a>
           </div>
         </main>
-        <Experiencia />
+        <Experiencia /> 
         <Kilometraje />
         <Footer />
       </div>

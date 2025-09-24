@@ -25,7 +25,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-full shadow-lg">
+    <div className="absolute w-full h-[400px] md:h-[500px] overflow-hidden shadow-lg">
       {images.map((src, i) => (
         <div
           key={i}
