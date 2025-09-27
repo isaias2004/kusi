@@ -5,10 +5,12 @@ import Image from "next/image";
 
 
 const images = [
-  "/images/atardecer.jpeg",
-  "/images/calle.jpeg",
-  "/images/eve-pose.jpeg",
-  "/images/salina.jpeg",
+  "/images/HOME-1.jpg",
+  "/images/HOME-2.jpg",
+  "/images/HOME-3.jpg",
+  "/images/HOME-4.jpg",
+  "/images/HOME-5.jpg",
+  "/images/HOME-6.jpg",
 ];
 
 export default function Carousel() {
@@ -19,7 +21,7 @@ export default function Carousel() {
       setCurrentIndex((prev) =>
         prev === images.length - 1 ? 0 : prev + 1
       );
-    }, 4000);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, []);

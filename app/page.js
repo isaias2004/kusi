@@ -6,6 +6,8 @@ import Kilometraje from './components/Kilometraje';
 import Experiencia from './components/Experiencia';
 import Footer from './components/Footer';
 import Carousel from './components/Carousel';
+import SumarKm from './components/SumarKm';
+import CarouselKm from './components/CarouselKm';
 
 
 export const metadata = {
@@ -75,7 +77,7 @@ export default function Home() {
           <Carousel />
           <div className="flex flex-col w-full items-end gap-3 md:mt-0 relative z-10">
             <h1 className="text-2xl md:text-4xl font-bold text-right text-gray-200 dark:text-gray-800 uppercase text-shadow-md ">Bienvenidos a <span className='text-[#C77A4E]'>KUSI   </span><br></br> turismo comunitario</h1>
-            <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md ">
+            <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md tracking-tight font-extralight">
                 Acompañáme a conectar con la herencia natural y cultural de Latinoamérica a través de experiencias que transforman.
             </h2>
               <a href="https://wa.link/9yh9be" target="_blank" rel="noopener noreferrer" className="bg-[#C77A4E] text-white px-6 py-3 rounded-md hover:bg-[#A65E2E] transition uppercase font-semibold w-max">
@@ -85,6 +87,11 @@ export default function Home() {
         </main>
         <Experiencia /> 
         <Kilometraje />
+        
+        <div className='flex flex-2 items-center justify-around w-full gap-10 md:flex-row flex-col'>
+          <SumarKm />
+          <CarouselKm />
+        </div>
         <Footer />
       </div>
     </div>
