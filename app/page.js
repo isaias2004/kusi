@@ -1,7 +1,8 @@
+// app/page.js
 import React from 'react';
 import './globals.css';
 import Image from 'next/image';
-// app/page.js
+import NavBar from './components/NavBar';
 import Kilometraje from './components/Kilometraje';
 import Experiencia from './components/Experiencia';
 import Footer from './components/Footer';
@@ -19,71 +20,29 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-20 gap-8 sm:p-20">
       <div className='container flex flex-col items-center justify-center'>
-        <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 flex justify-center">
-          <div className="max-w-screen-xl w-full flex flex-wrap items-center justify-evenly mx-auto p-4" >
-            {/* Logo */}
-            <div className="flex items-center">
-              <a  href="https://www.instagram.com/kusi.turismo/" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/instagram.png"
-                alt="logo kusi"
-                width={20}
-                height={30}
-          />
-          </a>
-                  <a href='https://www.tiktok.com/@viajandoconkusi' target='_blank'>
-                    <Image className='ml-2'
-                        src="/tik-tok.png"
-                        alt="logo kusi"
-                        width={20}
-                        height={30}
-                  />
-                  </a>
-                  <a href='https://wa.link/9yh9be' target='_blank'><Image className='ml-2'
-                        src="/whatsapp.png"
-                        alt="logo kusi"
-                        width={20}
-                        height={30}
-                  /> </a>
-            </div>
-            {/* Hamburger menu button (hidden, no JS) */}
-            <label htmlFor="menu-toggle" className="md:hidden inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 cursor-pointer">
-              <span className="sr-only">Open main menu</span>
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </label>
-            <input type="checkbox" id="menu-toggle" className="hidden peer" />
-            {/* Navbar links */}
-            <div className="peer-checked:block hidden w-full md:flex md:w-auto" id="navbar-sticky">
-              <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 font-medium rounded-lg bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900">
-                <li>
-                  <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Quienes somos</a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonios</a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-390 md:mt-310 md:mb-30">
+        <NavBar />
+        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-500 md:mt-480 md:mb-30">
           <Carousel />
           <div className="flex flex-col w-full items-end gap-3 md:mt-0 relative z-10">
-            <h1 className="text-2xl md:text-4xl font-bold text-right text-gray-200 dark:text-gray-800 uppercase text-shadow-md ">Bienvenidos a <span className='text-[#C77A4E]'>KUSI   </span><br></br> turismo comunitario</h1>
-            <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md tracking-tight font-extralight">
-                Acompañáme a conectar con la herencia natural y cultural de Latinoamérica a través de experiencias que transforman.
-            </h2>
-              <a href="https://wa.link/9yh9be" target="_blank" rel="noopener noreferrer" className="bg-[#C77A4E] text-white px-6 py-3 rounded-md hover:bg-[#A65E2E] transition uppercase font-semibold w-max">
-                Ver experiencias KUSI en Jujuy
-              </a>
-          </div>
+            <div className='flex flex-row w-full justify-between'>
+              <Image 
+                className='opacity-50 ml-15 hidden md:block'
+                src="/12.png"
+                alt="logo kusi"
+                width={250}
+                height={5}
+              />
+              <div className='justify-items-end                                                '>
+                <h1 className="text-2xl md:text-4xl font-bold text-right text-gray-200 dark:text-gray-800 uppercase text-shadow-md ">Bienvenidos a <span className='text-[#C77A4E]'>KUSI   </span><br></br> turismo comunitario</h1>
+                <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md tracking-tight font-extralight">
+                    Acompáñame a conectar con la herencia natural y cultural de Latinoamérica a través de experiencias que transforman.
+                </h2>
+                </div>
+              </div>
+                <a href="https://wa.link/9yh9be" target="_blank" rel="noopener noreferrer" className="bg-[#C77A4E] text-white px-6 py-3 rounded-md hover:bg-[#A65E2E] transition uppercase font-semibold w-max">
+                  Ver experiencias KUSI en Jujuy
+                </a>
+        </div>
         </main>
         <Experiencia /> 
         <Kilometraje />

@@ -22,7 +22,7 @@ export default function Kilometraje() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-40">
+    <div className="flex flex-col items-center justify-center h-40 mb-20">
       <h2 className="text-2xl font-semibold mb-2 text-gray-700">Kilometros recorridos</h2>
       <div
         ref={counterRef}
