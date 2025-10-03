@@ -23,7 +23,7 @@ export default function Home() {
         <NavBar />
         <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-500 md:mt-480 md:mb-30">
           <Carousel />
-          <div className="flex flex-col w-full items-end gap-3 md:mt-0 relative z-10">
+          <div className="flex flex-col w-full items-end gap-3 relative z-10">
             <div className='flex flex-row w-full justify-between'>
               <Image 
                 className='opacity-50 ml-15 hidden md:block'
@@ -32,7 +32,7 @@ export default function Home() {
                 width={250}
                 height={5}
               />
-              <div className='justify-items-end                                                '>
+              <div className='justify-items-end w-lg'>
                 <h1 className="text-2xl md:text-4xl font-bold text-right text-gray-200 dark:text-gray-800 uppercase text-shadow-md ">Bienvenidos a <span className='text-[#C77A4E]'>KUSI   </span><br></br> turismo comunitario</h1>
                 <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md tracking-tight font-extralight">
                     Acompáñame a conectar con la herencia natural y cultural de Latinoamérica a través de experiencias que transforman.
@@ -46,7 +46,6 @@ export default function Home() {
         </main>
         <Experiencia /> 
         <Kilometraje />
-        
         <div className='flex flex-2 items-center justify-around w-full gap-10 md:flex-row flex-col'>
           <SumarKm />
           <CarouselKm />
