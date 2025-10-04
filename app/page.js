@@ -32,7 +32,7 @@ export default function Home() {
                 width={250}
                 height={5}
               />
-              <div className='justify-items-end w-lg'>
+              <div className='justify-items-end'>
                 <h1 className="text-2xl md:text-4xl font-bold text-right text-gray-200 dark:text-gray-800 uppercase text-shadow-md ">Bienvenidos a <span className='text-[#C77A4E]'>KUSI   </span><br></br> turismo comunitario</h1>
                 <h2 className="text-1 md:text-2xl text-right text-gray-200 dark:text-gray-300 max-w-xl text-shadow-md tracking-tight font-extralight">
                     Acompáñame a conectar con la herencia natural y cultural de Latinoamérica a través de experiencias que transforman.

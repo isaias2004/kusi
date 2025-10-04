@@ -4,10 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-
 export default function NavBar() {
     return (
-         <div className='container flex flex-col items-center justify-center'>
+        <div className='container flex flex-col items-center justify-center'>
                 <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 flex justify-center">
                   <div className="max-w-screen-xl w-full flex flex-wrap items-center justify-evenly mx-auto p-4" >
                     {/* Logo */}
@@ -47,7 +46,7 @@ export default function NavBar() {
                     <div className="peer-checked:block hidden w-full md:flex md:w-auto" id="navbar-sticky">
                       <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 font-medium rounded-lg bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900">
                         <li>
-                          <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Home</a>
+                          <Link href="/Home" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Home</Link>
                         </li>
                         <li>
                           <Link href="/quienesSomos" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Quienes somos</Link>
