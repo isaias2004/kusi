@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import NavBar from '../components/NavBar';
+import WhatsAppFloatingButton from '../components/WhatsappButton';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -83,7 +84,7 @@ export default function experiencias() {
         >
           {/* EXPERIENCIA DESTACADA */}
           <section className="bg-gradient-to-b from-[#fff7f0] to-white dark:from-gray-900 dark:to-gray-800 row-span-1">
-            <div className="max-w-xl w-full flex flex-col items-center bg-white dark:bg-gray-900 rounded-2xl">
+            <div className="max-w-xl w-full flex flex-col items-center dark:bg-gray-900 rounded-2xl">
               <h2 className="text-2xl md:text-3xl font-bold text-[#C77A4E] mb-6 text-center">¿Qué incluye la experiencia?</h2>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-200 text-lg space-y-4 mb-8 text-left">
                 <li><span className="font-semibold">Alojamiento</span> en una eco cabaña en medio de la naturaleza en Bárcena</li>
@@ -183,6 +184,7 @@ export default function experiencias() {
 
       </main>
       {/* Footer siempre abajo */}
+      <WhatsAppFloatingButton />
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import NavBar from '../components/NavBar';
+import WhatsAppFloatingButton from '../components/WhatsappButton';
 import Footer from '../components/Footer';
 
 export const metadata = {
@@ -86,6 +87,7 @@ export default function quienesSomos() {
         </section>
       </main>
       {/* Footer siempre abajo */}
+      <WhatsAppFloatingButton />
       <Footer />
     </div>
   );

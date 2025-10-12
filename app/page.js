@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Carousel from './components/Carousel';
 import SumarKm from './components/SumarKm';
 import CarouselKm from './components/CarouselKm';
+import WhatsAppFloatingButton from './components/WhatsappButton';
 
 
 export const metadata = {
@@ -50,6 +51,7 @@ export default function Home() {
           <SumarKm />
           <CarouselKm />
         </div>
+        <WhatsAppFloatingButton />
         <Footer />
       </div>
     </div>
