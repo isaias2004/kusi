@@ -17,15 +17,15 @@ export default function quienesSomos() {
       {/* Contenido principal */}
       <main className="flex-1 flex flex-col items-center justify-center p-4 pb-20 gap-8 sm:p-20">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-20 md:mt-32 md:mb-8">
-          <h1 className='text-4xl font-semibold text-gray-700 text-center max-w-xl text-shadow-md'>
-            Cómo viajar transformó mi vida y hoy vivo viajando!
+          <h1 className='text-4xl font-semibold text-gray-700 text-center max-w-xl text-shadow-md uppercase'>
+            Conocé a Kusi
           </h1>
         </div>
         <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 py-16 mt-10 bg-gray-50 dark:bg-gray-900">
           {/* Imagen lado izquierdo en desktop, arriba en mobile */}
           <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
             <Image
-              src="/eve-pose.jpeg"
+              src="/sobremi4.jpg"
               alt="Equipo Kusi"
               width={400}
               height={400}
@@ -35,6 +35,7 @@ export default function quienesSomos() {
           {/* Texto lado derecho en desktop, abajo en mobile */}
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Un poco sobre mí</h2>
+            <h3 className="text-2xl md:text-2xl font-bold text-[#C77A4E] mb-4">Como viajar trasnformó mi vida, y hoy vivo viajando.</h3>
             <p className="text-gray-700 dark:text-gray-200 text-lg md:text-xl mb-6">
               Hola! Soy Eve, dejáme contarte cómo viajar transformó mi vida y hoy elijo vivir viajando y compartir mis experiencias con otros y otras a través de KUSI. 
             </p>
@@ -44,47 +45,92 @@ export default function quienesSomos() {
             </p>
           </div>
         </section>
-        <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 bg-white">
-          {/* Texto lado izquierdo */}
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-6 py-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Jujuy</h1>
-            <p className="text-gray-700 dark:text-gray-800 text-lg md:text-xl mb-6">
-              <span className='font-bold'>La Quebrada de Humahuaca</span> me atrapó no sólo con sus paisajes, sino también con su cultura, sus valores, su gente, las celebraciones, la forma de vivir y ver la vida. 
-              Continué viajando y conociendo el altiplano andino.
-              Las comunidades locales de diferentes pueblos han sembrado en mí aprendizajes únicos:  sumergiéndome en sus paisajes, probando su gastronomía y bailando sus ritmos.
-            </p>
+         <section className="w-full max-w-5xl px-4 py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/sobremi3.png"
+                alt="Viñedos"
+                width={800}
+                height={600}
+                className="w-full h-48 md:h-56 object-cover"
+                priority={false}
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/sobremi1.png"
+                alt="Hospedaje ecológico"
+                width={800}
+                height={600}
+                className="w-full h-48 md:h-56 object-cover"
+                priority={false}
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/sobremi7.jpg"
+                alt="Gastronomía regional"
+                width={800}
+                height={600}
+                className="w-full h-48 md:h-56 object-cover"
+                priority={false}
+              />
+            </div>
           </div>
-          {/* Imagen lado derecho */}
-          <div className="w-full md:w-1/2 flex justify-center items-center px-6 py-8">
-            <Image
-              src="/humahuaca.jpg"
-              alt="Explora Jujuy"
-              width={500}
-              height={350}
-              className="rounded-xl shadow-lg object-cover w-full max-w-lg"
-            />
+
+          <div className="mt-6 max-w-3xl mx-auto text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-base md:text-lg">
+              Desde hace años llevo en el corazón el deseo de seguir viajando por Latinoamérica, promoviendo en forma de agradecimiento un turismo que beneficie a las comunidades que tanto me han transformado. 
+              <span className='text-[#a76741]'> Así nació Kusi, una forma de viajar, agradecer  y acompañar desde el corazón.</span></p>
           </div>
         </section>
-        <section className="relative w-full flex flex-col items-center justify-center py-16 bg-transparent overflow-hidden">
-          {/* Imagen decorativa de fondo abajo a la derecha */}
-          <div className="absolute bottom-0 right-0 z-0 pointer-events-none w-[220px] h-[160px]">
-            <Image
-              src="/moments.svg"
-              alt="Decoración Jujuy"
-              fill
-              style={{ objectFit: 'contain' }}
-              className="opacity-30"
-            />
+
+        <section className="w-full max-w-5xl px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Bloque 1: introducción con barra decorativa */}
+            <div className="flex flex-col gap-4 p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow">
+              <span className="inline-block w-12 h-1 bg-[#C77A4E] rounded mb-2" />
+              <h3 className="text-xl font-semibold text-[#C77A4E]">Kusi: Alegría & Encuentro</h3>
+              <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base">
+                Kusi significa alegría en quechua, y para mí representa esa alegría profunda que aparece cuando nos conectamos con la naturaleza, con las personas y con lo que somos en esencia.
+              </p>
+            </div>
+
+            {/* Bloque 2: cita destacada */}
+            <div className="p-6 rounded-2xl bg-[#F6ECE2] dark:bg-gray-800 shadow-lg flex flex-col justify-center">
+              <blockquote className="text-gray-800 dark:text-gray-100 italic text-lg md:text-xl leading-relaxed">
+                "Desde acá diseño y acompaño experiencias que invitan a vivir el viaje como un encuentro: con el territorio, con la cultura y con uno mismo."
+              </blockquote>
+              <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                Creo en un turismo que respete los ritmos de la tierra, que valore las raíces y que deje huellas que transforman para bien.
+              </div>
+            </div>
+
+            {/* Bloque 3: lista de ideas + cierre */}
+            <div className="flex flex-col gap-4 p-6 rounded-2xl bg-white dark:bg-gray-900 shadow">
+              <h4 className="text-lg font-semibold text-[#C77A4E]">Un proyecto vivo!</h4>
+              <ul className="space-y-3 text-gray-700 dark:text-gray-200 text-sm md:text-base">
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-3 h-3 mt-2 rounded-full bg-[#C77A4E]" />
+                  <span>Cada asesoría, experiencia y viaje nace desde la escucha y el deseo de acompañar procesos reales, no solo itinerarios.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-3 h-3 mt-2 rounded-full bg-[#C77A4E]" />
+                  <span>Kusi no es una agencia tradicional: es un proyecto que crece con cada persona que se suma.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-3 h-3 mt-2 rounded-full bg-[#C77A4E]" />
+                  <span>Si estás acá, quizás sentís lo mismo: viajar puede ser mucho más que moverse de lugar.</span>
+                </li>
+              </ul>
+              <p className="mt-4 text-gray-600 dark:text-gray-400 text-sm">
+                Ojalá podamos encontrarnos en el camino y compartir la magia a través de experiencias que transforman.
+              </p>
+            </div>
           </div>
-          <div className="relative z-10 flex flex-col items-center w-full">
-            <h2 className="text-2xl font-bold text-center text-gray-700 mb-8">
-              KUSI significa “Alegría” en lengua quechua y es lo que quiero transmitir en cada experiencia que comparto y con la energía que deseo llegar a cada sitio mientras continúo el camino por Latinoamérica: trabajando codo a codo con las comunidades, sus emprendimientos y desde su perspectiva.
-            </h2>
-            <a href="https://wa.link/9yh9be" target="_blank" rel="noopener noreferrer" className="bg-[#C77A4E] text-white px-6 py-3 rounded-md hover:bg-[#A65E2E] transition font-semibold">
-              ¿Te sumas a la aventura?
-            </a>
-          </div>
-        </section>
+        </section>    
+
       </main>
       {/* Footer siempre abajo */}
       <WhatsAppFloatingButton />

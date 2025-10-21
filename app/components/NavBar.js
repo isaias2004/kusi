@@ -47,9 +47,48 @@ export default function NavBar() {
                         <li>
                           <Link href="/quienesSomos" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Quienes somos</Link>
                         </li>
-                        <li>
-                          <Link href="/experiencias" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Experiencias</Link>
+
+                        {/* EXPERIENCIAS con dropdown (toggle por click sin JS) */}
+                        <li className="relative">
+                          {/* checkbox toggle (peer) */}
+                          <input id="experiencias-toggle" type="checkbox" className="hidden peer" />
+
+                          {/* label actúa como botón (misma tipografía/tamaño que el menú) */}
+                          <label
+                            htmlFor="experiencias-toggle"
+                            className="flex items-center py-2 px-3 text-gray-900 rounded-sm md:p-0 md:hover:text-[#C77A4E] dark:text-white uppercase tracking-tight font-extralight cursor-pointer"
+                          >
+                            Experiencias
+                            <svg className="ml-2 w-3 h-3 text-gray-600 dark:text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
+                            </svg>
+                          </label>
+
+                          {/* Dropdown para desktop: solo visible cuando el checkbox está checked */}
+                          <div className="hidden peer-checked:block absolute left-0 top-full mt-2 w-56 bg-white dark:bg-gray-800 rounded-md shadow-lg z-30">
+                            <ul className="flex flex-col">
+                              <li>
+                                <Link href="/experiencias" className="block px-4 py-2 text-gray-600 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E]  md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">
+                                  Experiencias
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/viajesGrupales" className="block px-4 py-2 text-gray-600 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E]  md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">
+                                  Viajes grupales
+                                </Link>
+                              </li>
+                              <li>
+                                <Link href="/atencion100" className="block px-4 py-2 text-gray-600 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E]  md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">
+                                  Atención 100% personalizada
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
+                        <li>
+                          <Link href="/proyectoExpansion" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Proyecto de Expansión</Link>
+                        </li>
+
                         <li>
                           <Link href="/contacto" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#C77A4E] md:p-0 md:dark:hover:text-[#C77A4E] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent uppercase tracking-tight font-extralight">Contacto</Link>
                         </li>
