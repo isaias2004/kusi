@@ -100,7 +100,7 @@ export default function quienesSomos() {
             {/* Bloque 2: cita destacada */}
             <div className="p-6 rounded-2xl bg-[#F6ECE2] dark:bg-gray-800 shadow-lg flex flex-col justify-center">
               <blockquote className="text-gray-800 dark:text-gray-100 italic text-lg md:text-xl leading-relaxed">
-                "Desde acá diseño y acompaño experiencias que invitan a vivir el viaje como un encuentro: con el territorio, con la cultura y con uno mismo."
+                &quot;Desde acá diseño y acompaño experiencias que invitan a vivir el viaje como un encuentro: con el territorio, con la cultura y con uno mismo.&quot;
               </blockquote>
               <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
                 Creo en un turismo que respete los ritmos de la tierra, que valore las raíces y que deje huellas que transforman para bien.
