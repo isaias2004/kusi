@@ -22,7 +22,7 @@ export default function Home() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-20 gap-8 sm:p-20">
       <div className='container flex flex-col items-center justify-center'>
         <NavBar />
-        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-500 md:mt-480 md:mb-30">
+        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-630 md:mt-540 md:mb-30">
           <Carousel />
           <div className="flex flex-col w-full items-end gap-3 relative z-10">
             <div className='flex flex-row w-full justify-between'>
@@ -45,8 +45,19 @@ export default function Home() {
                 </a>
         </div>
         </main>
-        <Experiencia /> 
-        <Kilometraje />
+        <Experiencia />
+        <div className='w-full flex flex-col items-center justify-evenly mt-20 mb-20 md:flex-row'>
+          <div className='flex flex-col items-left mt-20 mb-20'>
+            <h1 className='text-3xl md:text-3xl font-extrabold text-[#C77A4E] mb-4 text-left opacity-30 uppercase'>
+            Proyecto de Expansión
+            </h1>
+            <p className='max-w-100'>
+                Un viaje que nace del corazón y se expande con propósito.
+                Desde la Quebrada de Humahuaca hasta el Valle Sagrado del Perú, Kusi camina los caminos de la tierra para tejer redes de mujeres, comunidades y sueños compartidos.
+                <span className='font-bold'><br></br>🌸 Un viaje consciente, sustentable y lleno de alma.</span></p>
+          </div>
+          <Kilometraje />
+        </div>
         <div className='flex flex-2 items-center justify-around w-full gap-10 md:flex-row flex-col'>
           <SumarKm />
           <CarouselKm />
