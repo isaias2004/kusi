@@ -35,7 +35,7 @@ export default function quienesSomos() {
           {/* Texto lado derecho en desktop, abajo en mobile */}
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Un poco sobre mí</h2>
-            <h3 className="text-2xl md:text-2xl font-bold text-[#C77A4E] mb-4">Como viajar trasnformó mi vida, y hoy vivo viajando.</h3>
+            <h3 className="text-2xl md:text-2xl font-bold text-[#C77A4E] mb-4">Como viajar transformó mi vida, y hoy vivo viajando.</h3>
             <p className="text-gray-700 dark:text-gray-200 text-lg md:text-xl mb-6">
               Hola! Soy Eve, dejáme contarte cómo viajar transformó mi vida y hoy elijo vivir viajando y compartir mis experiencias con otros y otras a través de KUSI. 
             </p>
@@ -45,7 +45,8 @@ export default function quienesSomos() {
             </p>
           </div>
         </section>
-         <section className="w-full max-w-5xl px-4 py-12">
+
+        <section className="w-full max-w-5xl px-4 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
@@ -80,6 +81,51 @@ export default function quienesSomos() {
           </div>
 
           <div className="mt-6 max-w-3xl mx-auto text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-base md:text-lg">
+              Me animé a cruzar fronteras recorriendo el altiplano andino, las comunidades locales de diferentes
+              pueblos  han sembrado en mí aprendizajes que me han transformado para siempre a través de sus paisajes,
+              gastronomía, celebraciones autóctonas, su música y sus bailes. La Quebrada de Humahuaca me atrapó por años,
+              adoptandome como una hija mas de la region, abrazandome no sólo con sus paisajes, sino también su gente con
+              su cultura, sus valores, las celebraciones, la forma de vivir y ver la vida.               
+              <span className='text-[#a76741]'> Así nació Kusi, una forma de viajar, agradecer  y acompañar desde el corazón.</span></p>
+          </div>
+        </section>
+        
+        <section className="w-full max-w-3xl mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/sobremi5.jpg"
+                alt="Viñedos"
+                width={800}
+                height={600}
+                className="w-full h-64 md:h-80 object-cover"
+                priority={false}
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/sobremi2.png"
+                alt="Hospedaje ecológico"
+                width={800}
+                height={600}
+                className="w-full h-64 md:h-80 object-cover"
+                priority={false}
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image
+                src="/sobremi6.jpg"
+                alt="Gastronomía regional"
+                width={800}
+                height={600}
+                className="w-full h-64 md:h-80 object-cover"
+                priority={false}
+              />
+            </div>
+          </div>
+
+          <div className="mt-6 max-w-2xl mx-auto text-center">
             <p className="text-gray-700 dark:text-gray-200 text-base md:text-lg">
               Desde hace años llevo en el corazón el deseo de seguir viajando por Latinoamérica, promoviendo en forma de agradecimiento un turismo que beneficie a las comunidades que tanto me han transformado. 
               <span className='text-[#a76741]'> Así nació Kusi, una forma de viajar, agradecer  y acompañar desde el corazón.</span></p>
@@ -130,6 +176,8 @@ export default function quienesSomos() {
             </div>
           </div>
         </section>    
+
+
 
       </main>
       {/* Footer siempre abajo */}
