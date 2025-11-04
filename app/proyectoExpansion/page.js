@@ -1,13 +1,11 @@
-import Image from 'next/image';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import CarouselContact from '../components/CarouselContact';
 import Kilometraje2 from '../components/Kilometraje2';
 import RouteAnimation from '../components/RouteAnimation';
 
 
 export const metadata = {
-  title: 'Contacto | Kusi Turismo',
+  title: 'Proyecto de Expansion | Kusi Turismo',
   description: 'Contactanos para vivir tu experiencia en Jujuy',
 };
 

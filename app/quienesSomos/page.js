@@ -5,8 +5,8 @@ import WhatsAppFloatingButton from '../components/WhatsappButton';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Kusi Turismo',
-  description: 'Agencia de turismo',
+  title: 'Quienes Somos | Kusi Turismo',
+  description: 'Contactanos para vivir tu experiencia en Jujuy',
 };
 
 export default function quienesSomos() {
@@ -17,7 +17,7 @@ export default function quienesSomos() {
       {/* Contenido principal */}
       <main className="flex-1 flex flex-col items-center justify-center p-4 pb-20 gap-8 sm:p-20">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-20 md:mt-32 md:mb-8">
-          <h1 className='text-4xl font-semibold text-gray-700 text-center max-w-xl text-shadow-md uppercase'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#C77A4E] uppercase mb-4'>
             Conocé a Kusi
           </h1>
         </div>
@@ -36,8 +36,8 @@ export default function quienesSomos() {
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Un poco sobre mí</h2>
             <h3 className="text-2xl md:text-2xl font-bold text-[#C77A4E] mb-4">Como viajar transformó mi vida, y hoy vivo viajando.</h3>
-            <p className="text-gray-700 dark:text-gray-200 text-lg md:text-xl mb-6">
-              Hola! Soy Eve, dejáme contarte cómo viajar transformó mi vida y hoy elijo vivir viajando y compartir mis experiencias con otros y otras a través de KUSI. 
+            <p className="text-gray-700 dark:text-gray-200 md:text-lg mb-6">
+              Hola! Soy Eve, dejáme contarte cómo viajar transformó mi vida y hoy elijo vivir viajando y compartir mis experiencias con otros y otras a través de <span className='font-bold'>KUSI</span>. 
             </p>
             <p className="text-gray-700 dark:text-gray-200 text-base md:text-lg mb-6">
               En el 2021, luego de haber egresado en la carrera de Turismo y Hotelería en Buenos Aires, decidí emprender un viaje al norte de Jujuy con amigas. Fué una semana de compartires,
@@ -82,7 +82,7 @@ export default function quienesSomos() {
 
           <div className="mt-6 max-w-3xl mx-auto text-center">
             <p className="text-gray-700 dark:text-gray-200 text-base md:text-lg">
-              Me animé a cruzar fronteras recorriendo el altiplano andino, las comunidades locales de diferentes
+              Me animé a cruzar fronteras recorriendo el <span className='font-bold'>altiplano andino</span>, las comunidades locales de diferentes
               pueblos  han sembrado en mí aprendizajes que me han transformado para siempre a través de sus paisajes,
               gastronomía, celebraciones autóctonas, su música y sus bailes. La Quebrada de Humahuaca me atrapó por años,
               adoptandome como una hija mas de la region, abrazandome no sólo con sus paisajes, sino también su gente con

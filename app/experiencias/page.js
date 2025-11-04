@@ -5,185 +5,183 @@ import WhatsAppFloatingButton from '../components/WhatsappButton';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Kusi Turismo',
-  description: 'Agencia de turismo',
+  title: 'Experiencias | Kusi Turismo',
+  description: 'Contactanos para vivir tu experiencia en Jujuy',
 };
 
 export default function experiencias() {
   return (
-    <div className="font-sans min-h-screen flex flex-col">
-      {/* NavBar siempre arriba */}
+     <div className="font-sans min-h-screen flex flex-col bg-white dark:bg-gray-900">
       <NavBar />
-      {/* Contenido principal */}
-      <main className="flex-1 flex flex-col items-center justify-center p-4 pb-20 gap-8 sm:p-20">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-20 md:mt-32 md:mb-8">
-          <h1 className='text-4xl font-semibold text-gray-700 text-center max-w-xl text-shadow-md'>
-            Sumate a las aventuras y vivilo vos mismo
+
+      <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-20 sm:py-24">
+        {/* Hero */}
+        <header className="mb-10 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#C77A4E] uppercase mb-4">
+            EXPERIENCIAS KUSI EN ARGENTINA
           </h1>
-        </div>
-        <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 py-16 mt-10 bg-gray-50 dark:bg-gray-900">
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Vinito y montaña</h2>
-            <p className="text-gray-700 dark:text-gray-200 text-lg md:text-xl mb-6">
-              Vinito y montaña es la experiencia ideal para amistades y parejas que buscan un buen descanso y gastronomía regional, rodeados de viñedos e historias que atrapan, un fin de semana. 
+          <p className="max-w-3xl mx-auto text-gray-700 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
+            Desde la Quebrada de Humahuaca diseñamos y acompañamos experiencias auténticas y conscientes,
+            creadas para quienes buscan vivir el viaje desde el alma, lejos del turismo masivo y un poco más cerca
+            de la gente del lugar. Cada propuesta nace desde el respeto por la tierra, las comunidades y las tradiciones.
+          </p>
+        </header>
+
+        {/* 3 imágenes horizontal + texto abajo (igual ancho que el sitio) */}
+        <section className="mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <Image src="/experiencia6.jpg" alt="Viñedos" width={1200} height={800} className="w-full h-64 object-cover" />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <Image src="/experiencia5.jpg" alt="Hospedaje" width={1200} height={800} className="w-full h-64 object-cover" />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <Image src="/experiencia2.jpeg" alt="Gastronomía" width={1200} height={800} className="w-full h-64 object-cover" />
+            </div>
+          </div>
+
+          <div className="mt-6 max-w-3xl mx-auto text-center">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#C77A4E] mb-2">Experiencias comunitarias y culturales</h2>
+            <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed">
+              Visitas guiadas a comunidades andinas, bodegas familiares, talleres de cocina regional, tejido, agricultura ancestral y caminatas guiadas por guardianes del territorio.
             </p>
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
-            <Image
-              src="/experiencia6.jpg"
-              alt="Equipo Kusi"
-              width={400}
-              height={400}
-              className="rounded-xl shadow-lg object-cover w-72 h-72 md:w-96 md:h-96"
-            />
-          </div>
-        </section>
-        <section className="w-full flex flex-col md:flex-row items-center justify-center py-16 bg-white">
-          <div className="w-full md:w-1/2 flex justify-center items-center px-6 py-8">
-            <Image
-              src="/experiencia5.jpg"
-              alt="Explora Jujuy"
-              width={400}
-              height={400}
-              className="rounded-xl shadow-lg object-cover w-72 h-72 md:w-96 md:h-96"
-            />
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-6 py-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Hospedaje</h1>
-            <p className="text-gray-700 dark:text-gray-800 text-lg md:text-xl mb-6">
-              Nos hospedamos en <span className='font-bold'>dormis sustentables</span> construidos de manera ecológica por una familia jujeña, ubicados al inicio de la Quebrada de Humahuaca, en la localidad de Bárcena. Allí, entre cerros verdes,  el silencio y buen aroma de la naturaleza, pasaremos la noche estrellada y disfrutaremos un buen desayuno regional a la mañana siguiente. 
-            </p>
-          </div>
-        </section>
-        <section className="w-full flex flex-col md:flex-row items-center justify-center gap-8 py-16 mt-10 bg-gray-50 dark:bg-gray-900">
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#C77A4E] mb-4">Gastronomía</h2>
-            <p className="text-gray-700 dark:text-gray-200 text-lg md:text-xl mb-6">
-              Al día siguiente nos sumergimos en una experiencia gastronómica en el corazón de la quebrada, entre los pueblos de Maimará y Tilcara nos recibirá Raquel, una de las nueve hermanas que gestiona la Bodega familiar La Selestina. Nos esperan en su campo para compartir un día con degustación de vinos de altura, quesos, empanadas, plato principal y postre. Además, nos llevarán a conocer las diferentes plantaciones  de la Bodega, contándonos su proceso de producción, la historia de su familia y como año a año se esforzaron para ser parte de la ruta del vino de altura. 
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
-            <Image
-              src="/experiencia2.jpeg"
-              alt="Equipo Kusi"
-              width={400}
-              height={400}
-              className="rounded-xl shadow-lg object-cover w-72 h-72 md:w-96 md:h-96"
-            />
           </div>
         </section>
 
-        <div
-          className="
-            grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl
-            [&>section]:rounded-2xl [&>section]:shadow-xl
-            [&>section]:flex [&>section]:flex-col [&>section]:items-center [&>section]:justify-center
-            [&>section]:p-8 [&>section]:md:p-12
-            md:auto-rows-min
-          "
-        >
-          {/* EXPERIENCIA DESTACADA */}
-          <section className="bg-gradient-to-b from-[#fff7f0] to-white dark:from-gray-900 dark:to-gray-800 row-span-1">
-            <div className="max-w-xl w-full flex flex-col items-center dark:bg-gray-900 rounded-2xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#C77A4E] mb-6 text-center">¿Qué incluye la experiencia?</h2>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-200 text-lg space-y-4 mb-8 text-left">
-                <li><span className="font-semibold">Alojamiento</span> en una eco cabaña en medio de la naturaleza en Bárcena</li>
-                <li><span className="font-semibold">Desayunos caseros</span> con productos regionales</li>
-                <li>Una <span className="font-semibold">visita guiada exclusiva</span> a una bodega familiar, con degustación, recorrido, entrada, plato principal y postre</li>
-              </ul>
-              <a
-                href="mailto:kusiturismocomunitario@gmail.com?subject=Quiero saber más sobre la experiencia"
-                className="bg-[#C77A4E] text-white px-8 py-3 rounded-md font-semibold text-lg shadow hover:bg-[#A65E2E] transition"
-              >
-                QUIERO SABER MÁS
-              </a>
-            </div>
-          </section>
-          {/* VIAJE GRUPAL DE MUJERES */}
-          <section className="bg-white dark:bg-gray-900 row-span-2 md:row-span-2">
-            <div className="max-w-2xl w-full flex flex-col items-center rounded-2xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#C77A4E] mb-4 text-center">VIAJE GRUPAL DE MUJERES, AÑO NUEVO Y CHAYA DE MOJONES</h2>
-              <p className="text-gray-700 dark:text-gray-200 text-lg mb-6 text-center">
-                Una experiencia grupal femenina de fin de año y nuevos comienzos.<br />
-                Este viaje está pensado para que disfrutes de un viaje sola, sin sentirte sola nunca. Una semana para que conectes con tu lado femenino y valiente, para que puedas conocer personas nuevas y confiar en la magia de los encuentros compartiendo otras culturas en equipo.<br />
-                Si es tu primer viaje sola, si es tu primer viaje al norte, si estás en un momento especial de tu vida, acá estamos para iniciar una aventura que nos llene de recuerdos, sabores, música, tradición, cultura y sobre todo: alegría.
+        {/* Lista de experiencias en cards */}
+        <section className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-min">
+          {/* Manos de mujeres */}
+          <article className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
+            <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">MANOS DE MUJERES</h3>
+            <p className="text-gray-700 dark:text-gray-200 mb-3">
+              Un día de cocina regional como acto de conexión: aprender y compartir junto a otras mujeres y las familias anfitrionas.
+            </p>
+            <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1 mb-4 list-disc list-inside">
+              <li>Traslados In-Out por la Quebrada</li>
+              <li>Recorrido cultural guiado</li>
+              <li>Desayuno y almuerzo participativo</li>
+            </ul>
+            <a href="mailto:kusiturismo@gmail.com?subject=Manos de Mujeres" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
+              QUIERO SABER MÁS
+            </a>
+          </article>
+
+          {/* Vinito y Montaña */}
+          <article className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
+            <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">VINITO Y MONTAÑA</h3>
+            <p className="text-gray-700 dark:text-gray-200 mb-3">
+              Combina lo mejor del norte jujeño en un fin de semana: eco cabaña, desayunos caseros y bodega familiar con degustación.
+            </p>
+            <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1 mb-4 list-disc list-inside">
+              <li>Alojamiento en eco cabaña en Bárcena</li>
+              <li>Desayunos regionales</li>
+              <li>Visita guiada con degustación y comida</li>
+            </ul>
+            <a href="mailto:kusiturismo@gmail.com?subject=Vinito y Montaña" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
+              QUIERO SABER MÁS
+            </a>
+          </article>
+
+          {/* Caminar hacia dentro */}
+          <article className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
+            <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">CAMINAR HACIA DENTRO</h3>
+            <p className="text-gray-700 dark:text-gray-200 mb-3">
+              Trekking de dificultad alta en territorios comunitarios, con meditación ancestral y trabajo de sanación del linaje. Medio día.
+            </p>
+            <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1 mb-4 list-disc list-inside">
+              <li>Guía local en comunidades</li>
+              <li>Acceso respetuoso a cuevas ancestrales</li>
+              <li>Meditación y rituales de conexión</li>
+            </ul>
+            <a href="mailto:kusiturismo@gmail.com?subject=Caminar Hacia Dentro" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
+              QUIERO SABER MÁS
+            </a>
+          </article>
+
+          {/* Salinas grandes - ruedas / atardecer */}
+          <article className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
+            <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">SALINAS GRANDES</h3>
+            <p className="text-gray-700 dark:text-gray-200 mb-3">
+              Dos opciones: pedalear sobre el salar + extracción de sal y almuerzo; o vivir el atardecer con astroturismo.
+            </p>
+            <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1 mb-4 list-disc list-inside">
+              <li>Bicicletas y guía, traslados in-out</li>
+              <li>Demostración y participación en extracción de sal</li>
+              <li>Opción atardecer: merienda y observación de estrellas (≈6 hs)</li>
+            </ul>
+            <a href="mailto:kusiturismo@gmail.com?subject=Salinas Grandes" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
+              QUIERO SABER MÁS
+            </a>
+          </article>
+        </section>
+
+        {/* Viajes grupales */}
+        <section className="mb-12 bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-lg p-6">
+          <div className="md:flex md:items-start md:gap-6">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold text-[#C77A4E] mb-3">VIAJES GRUPALES</h2>
+              <p className="text-gray-700 dark:text-gray-200 mb-4">
+                Encuentros transformadores para reconectar con la esencia propia, compartir caminos, rituales y aprendizajes entre montañas, música y fuego.
               </p>
-              <h3 className="text-lg font-semibold text-[#C77A4E] mb-2">Un itinerario repleto de actividades grupales:</h3>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-200 text-base space-y-2 mb-6 text-left">
-                <li>Círculo de mujeres con oráculo, lecturas y escrituras al inicio y fin del viaje</li>
+
+              <h3 className="text-lg font-semibold mb-2">FIN DE AÑO 2025 — QUEBRADA DE HUMAHUACA (entre mujeres)</h3>
+              <p className="text-sm text-gray-700 dark:text-gray-200 mb-2">29/12/2025 - 06/01/2026 — Chaya de Mojones</p>
+              <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1 mb-4 list-disc list-inside">
+                <li>Círculo de mujeres, oráculo y escrituras</li>
                 <li>Caminatas y meditaciones guiadas</li>
-                <li>
-                  Celebración de año nuevo al estilo jujeño en Maimará: música en vivo, comida, colores y festejos en las calles. Ofrendas a la madre tierra, agradecimiento y buenos deseos para el año entrante.
-                </li>
-                <li>
-                  Experiencia comunitaria con las mujeres de Juella: caminatas, comida regional, relatos y actividades en su mágico pueblo.
-                </li>
+                <li>Celebración de año nuevo y chaya de mojones</li>
+                <li>Encuentro con las mujeres de Juella</li>
               </ul>
-              <p className="text-gray-700 dark:text-gray-200 text-base mb-6 text-center">
-                <span className="font-semibold">Desde el 29 de diciembre al 6 de enero</span>
-              </p>
-              <a
-                href="mailto:kusiturismo@gmail.com?subject=Quiero saber más sobre el viaje grupal de mujeres"
-                className="bg-[#C77A4E] text-white px-8 py-3 rounded-md font-semibold text-lg shadow hover:bg-[#A65E2E] transition"
-              >
+
+              <a href="mailto:kusiturismo@gmail.com?subject=Viaje grupal Fin de Año 2025" className="inline-block bg-[#C77A4E] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
                 QUIERO SABER MÁS
               </a>
             </div>
-          </section>
-          {/* ASESORÍA PERSONALIZADA */}
-          <section className="bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 row-span-1">
-            <div className="max-w-xl w-full flex flex-col items-center rounded-2xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#C77A4E] mb-4 text-center">
-                ASESORÍA E ITINERARIOS PERSONALIZADOS
-              </h2>
-              <p className="text-gray-700 dark:text-gray-200 text-lg mb-6 text-center">
-                Armemos tu viaje a medida, 100% personalizado.<br />
-                Reservamos alojamiento y diseñamos tu viaje desde cero, con actividades guiadas, excursiones y traslados en las fechas que desees, de acuerdo al presupuesto que manejes y tipo de viaje que anhelas.<br />
-                No hay más excusas, tu viaje es y arranca HOY.
-              </p>
-              <div className="w-full flex justify-center">
-                <a
-                  href="mailto:kusiturismo@gmail.com?subject=Quiero mi asesoría personalizada"
-                  className="bg-[#C77A4E] text-white px-8 py-3 rounded-md font-semibold text-lg shadow hover:bg-[#A65E2E] transition text-center"
-                >
-                  ¡QUIERO MI ASESORÍA PERSONALIZADA!
-                </a>
-              </div>
+
+            <div className="mt-6 md:mt-0 md:w-64 flex-shrink-0">
+              <Image src="/sobremi7.jpg" alt="Viaje grupal" width={600} height={400} className="rounded-lg shadow-md object-cover w-full h-40" />
             </div>
-          </section>
-          {/* COLABORACIÓN */}
-          <section className="bg-white dark:bg-gray-900 md:col-span-2">
-            <div className="max-w-2xl w-full flex flex-col items-center rounded-2xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#C77A4E] mb-4 text-center">¿Te gustó este proyecto?</h2>
-              <p className="text-gray-700 dark:text-gray-200 text-lg mb-6 text-center">
-                AYUDAME A SEGUIR VIAJANDO ACÁ<br />
-                Desde hace años llevo en el corazón el deseo de seguir viajando, compartiendo culturas, conectando con la tierra y promoviendo un turismo que beneficie a las comunidades, un turismo más justo, consciente y humano. Donde el respeto por la naturaleza, la diversidad, la comunidad y las raíces sea lo más importante.
+          </div>
+        </section>
+
+        {/* Asesoría personalizada */}
+        <section className="mb-12 p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
+          <div className="md:flex md:items-center md:gap-6">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold text-[#C77A4E] mb-3">ASESORÍA E ITINERARIOS PERSONALIZADOS</h2>
+              <p className="text-gray-700 dark:text-gray-200 mb-3">
+                Dejame acompañarte creando en conjunto una experiencia real con itinerarios diseñados a tu medida e intenciones.
               </p>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-200 text-base space-y-2 mb-6 text-left">
-                <li>
-                  <span className="font-semibold">Económicamente para llegar a más sitios:</span>
-                  <div className="flex gap-4 mt-2">
-                    <a href="https://cafecito.app/viajandoconkusi0" target="_blank" rel="noopener noreferrer" className="underline text-[#C77A4E] hover:text-[#A65E2E]">Cafecito</a>
-                    <a href="https://www.mercadopago.com.ar/" target="_blank" rel="noopener noreferrer" className="underline text-[#C77A4E] hover:text-[#A65E2E]">Mercado Pago</a>
-                  </div>
-                </li>
-                <li>
-                  <span className="font-semibold">Como sponsor:</span> enviando un correo a <a href="mailto:kusiturismocomunitario@gmail.com" className="underline text-[#C77A4E] hover:text-[#A65E2E]">kusiturismocomunitario@gmail.com</a>
-                </li>
-                <li>
-                  <span className="font-semibold">Interactuando con <a href="https://www.instagram.com/kusi.turismo/" target="_blank" rel="noopener noreferrer" className="underline text-[#C77A4E] hover:text-[#A65E2E]">@kusi.turismo</a> en las diferentes plataformas</span>
-                </li>
-                <li>
-                  <span className="font-semibold">Likeando y compartiendo mi contenido</span>
-                </li>
+              <ul className="text-sm text-gray-700 dark:text-gray-200 list-disc list-inside mb-4 space-y-1">
+                <li>Orientación y reservas en hospedajes a tu medida</li>
+                <li>Guía gastronómica y artística según época</li>
+                <li>Reservas de experiencias comunitarias</li>
+                <li>Planificación según calendario cultural</li>
               </ul>
+              <a href="mailto:kusiturismo@gmail.com?subject=Asesoría personalizada" className="inline-block bg-[#C77A4E] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
+                ¡QUIERO MI ASESORÍA PERSONALIZADA!
+              </a>
             </div>
-          </section>
-        </div>
 
+            <div className="mt-6 md:mt-0 md:w-48 flex-shrink-0">
+              <Image src="/experiencia5.jpg" alt="Asesoría personalizada" width={500} height={350} className="rounded-lg shadow-md object-cover w-full h-36" />
+            </div>
+          </div>
+        </section>
 
+        {/* Final CTA / contacto breve */}
+        <section className="mb-16 text-center">
+          <h3 className="text-xl font-semibold text-[#C77A4E] mb-3">Queres más información?</h3>
+          <p className="text-gray-700 dark:text-gray-200 mb-4 max-w-2xl mx-auto">
+            Escribinos y te contamos con gusto. Reservas, itinerarios y consultas personalizadas por mail.
+          </p>
+          <a href="mailto:kusiturismo@gmail.com" className="inline-block bg-[#C77A4E] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#A65E2E] transition">
+            ESCRIBIR A KUSITURISMO
+          </a>
+        </section>
       </main>
-      {/* Footer siempre abajo */}
+
       <WhatsAppFloatingButton />
       <Footer />
     </div>
