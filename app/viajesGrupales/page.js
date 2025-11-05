@@ -13,7 +13,6 @@ export default function ViajesGrupales() {
   return (
     <div className="font-sans min-h-screen flex flex-col bg-white dark:bg-gray-900">
       <NavBar />
-
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-20 sm:py-24">
         {/* HERO */}
         <header className="text-center mb-10">
@@ -24,19 +23,16 @@ export default function ViajesGrupales() {
             Encuentros transformadores para reconectar con la esencia propia, compartir caminos, rituales y aprendizajes entre montañas, música y fuego.
           </p>
         </header>
-
         {/* FEATURE / HERO IMAGE */}
         <section className="mb-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
           <div className="md:col-span-2 rounded-2xl overflow-hidden shadow-lg">
             <CarouselViajes/>
           </div>
-
           <aside className="bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow p-6 flex flex-col justify-between">
             <div>
               <h3 className="text-lg font-semibold text-[#C77A4E] mb-2">Próximo viaje destacado</h3>
               <p className="text-sm text-gray-700 dark:text-gray-200 mb-3">Fin de año 2025 — Quebrada de Humahuaca (entre mujeres)</p>
               <p className="text-xs text-gray-500 mb-4">29/12/2025 - 06/01/2026 · Chaya de Mojones</p>
-
               <ul className="text-sm text-gray-700 dark:text-gray-200 list-inside list-disc space-y-2 mb-4">
                 <li>Círculo de mujeres, oráculo y escrituras</li>
                 <li>Caminatas y meditaciones guiadas</li>
@@ -52,7 +48,6 @@ export default function ViajesGrupales() {
             </a>
           </aside>
         </section>
-
         {/* ITINERARIES / EXPERIENCES CARDS */}
         <section className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           <article className="p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
@@ -67,7 +62,6 @@ export default function ViajesGrupales() {
             </ul>
             <a href="mailto:kusiturismo@gmail.com?subject=Manos de Mujeres" className="text-[#C77A4E] font-semibold text-sm underline">QUIERO SABER MÁS</a>
           </article>
-
           <article className="p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
             <h4 className="text-md font-semibold text-[#C77A4E] mb-2">VINITO Y MONTAÑA</h4>
             <p className="text-sm text-gray-700 dark:text-gray-200 mb-3">
@@ -80,7 +74,6 @@ export default function ViajesGrupales() {
             </ul>
             <a href="mailto:kusiturismo@gmail.com?subject=Vinito y Montaña" className="text-[#C77A4E] font-semibold text-sm underline">QUIERO SABER MÁS</a>
           </article>
-
           <article className="p-5 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
             <h4 className="text-md font-semibold text-[#C77A4E] mb-2">CAMINAR HACIA DENTRO</h4>
             <p className="text-sm text-gray-700 dark:text-gray-200 mb-3">
@@ -94,7 +87,6 @@ export default function ViajesGrupales() {
             <a href="mailto:kusiturismo@gmail.com?subject=Caminar Hacia Dentro" className="text-[#C77A4E] font-semibold text-sm underline">QUIERO SABER MÁS</a>
           </article>
         </section>
-
         {/* SALINAS options */}
         <section className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
@@ -107,7 +99,6 @@ export default function ViajesGrupales() {
             </ul>
             <a href="mailto:kusiturismo@gmail.com?subject=Salinas Grandes - Sobre ruedas" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">QUIERO SABER MÁS</a>
           </div>
-
           <div className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
             <h4 className="text-lg font-semibold text-[#C77A4E] mb-2">SALINAS GRANDES AL ATARDECER</h4>
             <p className="text-sm text-gray-700 dark:text-gray-200 mb-3">Astroturismo y atardecer en el salar. Merienda y observación de estrellas (≈6 hs).</p>
@@ -119,7 +110,6 @@ export default function ViajesGrupales() {
             <a href="mailto:kusiturismo@gmail.com?subject=Salinas Grandes - Atardecer" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">QUIERO SABER MÁS</a>
           </div>
         </section>
-
         {/* WHY JOIN / VALUES */}
         <section className="mb-12 bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6">
           <h3 className="text-xl font-semibold text-[#C77A4E] mb-3">¿Por qué un viaje grupal con Kusi?</h3>
@@ -138,18 +128,16 @@ export default function ViajesGrupales() {
             </div>
           </div>
         </section>
-
         {/* TESTIMONIAL + CTA */}
         <section className="mb-16 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
           <div className="md:col-span-2 p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
             <blockquote className="italic text-gray-700 dark:text-gray-200">
-              "Participar de un viaje grupal con Kusi fue transformador: paisajes, mujeres, rituales y un cuidado que sentí en cada paso." — María
+              &apos;&apos; Participar de un viaje grupal con Kusi fue transformador: paisajes, mujeres, rituales y un cuidado que sentí en cada paso.&apos;&apos; — María
             </blockquote>
             <p className="mt-4 text-sm text-gray-700 dark:text-gray-200">
               Si querés ser parte del próximo encuentro, escribinos y te contamos todo el itinerario completo y las plazas disponibles.
             </p>
           </div>
-
           <div className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg flex flex-col items-center">
             <h4 className="text-lg font-semibold text-[#C77A4E] mb-2">Queres más info?</h4>
             <a href="mailto:kusiturismo@gmail.com?subject=Quiero info viajes grupales" className="inline-block bg-[#C77A4E] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
@@ -158,7 +146,6 @@ export default function ViajesGrupales() {
           </div>
         </section>
       </main>
-
       <WhatsAppFloatingButton />
       <Footer />
     </div>
