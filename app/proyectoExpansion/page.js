@@ -2,6 +2,7 @@ import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Kilometraje2 from '../components/Kilometraje2';
 import RouteAnimation from '../components/RouteAnimation';
+import WhatsAppFloatingButton from '../components/WhatsappButton';
 
 
 export const metadata = {
@@ -116,6 +117,7 @@ export default function Contacto() {
 
         {/* ...existing contact form / resto de la página sigue ... */}
       </main>
+      <WhatsAppFloatingButton />
       <Footer />
     </div>
   );

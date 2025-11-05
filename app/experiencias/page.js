@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function experiencias() {
   return (
-     <div className="font-sans min-h-screen flex flex-col bg-white dark:bg-gray-900">
+      <div className="font-sans min-h-screen flex flex-col bg-white dark:bg-gray-900">
       <NavBar />
 
       <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-20 sm:py-24">
@@ -47,12 +47,20 @@ export default function experiencias() {
               Visitas guiadas a comunidades andinas, bodegas familiares, talleres de cocina regional, tejido, agricultura ancestral y caminatas guiadas por guardianes del territorio.
             </p>
           </div>
-        </section>
-
+        </section>        
         {/* Lista de experiencias en cards */}
         <section className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-min">
           {/* Manos de mujeres */}
           <article className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
+            <div className="overflow-hidden rounded-md mb-4">
+              <Image
+                src="/manosdemujeres.jpg"
+                alt="Manos de mujeres - cocina regional"
+                width={600}
+                height={900}
+                className="w-full h-[420px] md:h-[560px] object-contain"
+              />
+            </div>
             <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">MANOS DE MUJERES</h3>
             <p className="text-gray-700 dark:text-gray-200 mb-3">
               Un día de cocina regional como acto de conexión: aprender y compartir junto a otras mujeres y las familias anfitrionas.
@@ -69,6 +77,15 @@ export default function experiencias() {
 
           {/* Vinito y Montaña */}
           <article className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
+            <div className="overflow-hidden rounded-md mb-4">
+              <Image
+                src="/vinitoymontaña.jpg"
+                alt="Vinito y Montaña"
+                width={600}
+                height={900}
+                className="w-full h-[420px] md:h-[560px] object-contain"
+              />
+            </div>
             <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">VINITO Y MONTAÑA</h3>
             <p className="text-gray-700 dark:text-gray-200 mb-3">
               Combina lo mejor del norte jujeño en un fin de semana: eco cabaña, desayunos caseros y bodega familiar con degustación.
@@ -85,6 +102,15 @@ export default function experiencias() {
 
           {/* Caminar hacia dentro */}
           <article className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
+            <div className="overflow-hidden rounded-md mb-4">
+              <Image
+                src="/caminata.jpg"
+                alt="Caminar hacia dentro"
+                width={600}
+                height={900}
+                className="w-full h-[420px] md:h-[560px] object-contain"
+              />
+            </div>
             <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">CAMINAR HACIA DENTRO</h3>
             <p className="text-gray-700 dark:text-gray-200 mb-3">
               Trekking de dificultad alta en territorios comunitarios, con meditación ancestral y trabajo de sanación del linaje. Medio día.
@@ -101,6 +127,15 @@ export default function experiencias() {
 
           {/* Salinas grandes - ruedas / atardecer */}
           <article className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
+            <div className="overflow-hidden rounded-md mb-4">
+              <Image
+                src="/salidasgrandes.jpg"
+                alt="Salinas Grandes"
+                width={600}
+                height={900}
+                className="w-full h-[420px] md:h-[560px] object-contain"
+              />
+            </div>
             <h3 className="text-lg font-semibold text-[#C77A4E] mb-3">SALINAS GRANDES</h3>
             <p className="text-gray-700 dark:text-gray-200 mb-3">
               Dos opciones: pedalear sobre el salar + extracción de sal y almuerzo; o vivir el atardecer con astroturismo.
@@ -114,60 +149,6 @@ export default function experiencias() {
               QUIERO SABER MÁS
             </a>
           </article>
-        </section>
-
-        {/* Viajes grupales */}
-        <section className="mb-12 bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-lg p-6">
-          <div className="md:flex md:items-start md:gap-6">
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-[#C77A4E] mb-3">VIAJES GRUPALES</h2>
-              <p className="text-gray-700 dark:text-gray-200 mb-4">
-                Encuentros transformadores para reconectar con la esencia propia, compartir caminos, rituales y aprendizajes entre montañas, música y fuego.
-              </p>
-
-              <h3 className="text-lg font-semibold mb-2">FIN DE AÑO 2025 — QUEBRADA DE HUMAHUACA (entre mujeres)</h3>
-              <p className="text-sm text-gray-700 dark:text-gray-200 mb-2">29/12/2025 - 06/01/2026 — Chaya de Mojones</p>
-              <ul className="text-sm text-gray-700 dark:text-gray-200 space-y-1 mb-4 list-disc list-inside">
-                <li>Círculo de mujeres, oráculo y escrituras</li>
-                <li>Caminatas y meditaciones guiadas</li>
-                <li>Celebración de año nuevo y chaya de mojones</li>
-                <li>Encuentro con las mujeres de Juella</li>
-              </ul>
-
-              <a href="mailto:kusiturismo@gmail.com?subject=Viaje grupal Fin de Año 2025" className="inline-block bg-[#C77A4E] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
-                QUIERO SABER MÁS
-              </a>
-            </div>
-
-            <div className="mt-6 md:mt-0 md:w-64 flex-shrink-0">
-              <Image src="/sobremi7.jpg" alt="Viaje grupal" width={600} height={400} className="rounded-lg shadow-md object-cover w-full h-40" />
-            </div>
-          </div>
-        </section>
-
-        {/* Asesoría personalizada */}
-        <section className="mb-12 p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
-          <div className="md:flex md:items-center md:gap-6">
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-[#C77A4E] mb-3">ASESORÍA E ITINERARIOS PERSONALIZADOS</h2>
-              <p className="text-gray-700 dark:text-gray-200 mb-3">
-                Dejame acompañarte creando en conjunto una experiencia real con itinerarios diseñados a tu medida e intenciones.
-              </p>
-              <ul className="text-sm text-gray-700 dark:text-gray-200 list-disc list-inside mb-4 space-y-1">
-                <li>Orientación y reservas en hospedajes a tu medida</li>
-                <li>Guía gastronómica y artística según época</li>
-                <li>Reservas de experiencias comunitarias</li>
-                <li>Planificación según calendario cultural</li>
-              </ul>
-              <a href="mailto:kusiturismo@gmail.com?subject=Asesoría personalizada" className="inline-block bg-[#C77A4E] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition">
-                ¡QUIERO MI ASESORÍA PERSONALIZADA!
-              </a>
-            </div>
-
-            <div className="mt-6 md:mt-0 md:w-48 flex-shrink-0">
-              <Image src="/experiencia5.jpg" alt="Asesoría personalizada" width={500} height={350} className="rounded-lg shadow-md object-cover w-full h-36" />
-            </div>
-          </div>
         </section>
 
         {/* Final CTA / contacto breve */}

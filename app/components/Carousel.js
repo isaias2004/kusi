@@ -39,7 +39,7 @@ export default function Carousel() {
             src={src}
             alt={`Slide ${i}`}
             fill
-            className="object-cover"
+            className="object-cover brightness-60"
             priority={i === 0} // carga más rápido la primera
           />
         </div>
