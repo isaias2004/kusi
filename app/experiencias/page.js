@@ -34,10 +34,10 @@ export default function experiencias() {
               <Image src="/experiencia6.jpg" alt="Viñedos" width={1200} height={800} className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/experiencia5.jpg" alt="Hospedaje" width={1200} height={800} className="w-full h-64 object-cover" />
+              <Image src="/bailando.jpg" alt="Hospedaje" width={1200} height={800} className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/experiencia2.jpeg" alt="Gastronomía" width={1200} height={800} className="w-full h-64 object-cover" />
+              <Image src="/mochila-verde.jpg" alt="Gastronomía" width={1200} height={800} className="w-full h-64 object-cover" />
             </div>
           </div>
 

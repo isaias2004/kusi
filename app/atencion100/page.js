@@ -23,7 +23,15 @@ export default function Contacto() {
             Diseñamos itinerarios a tu medida: viajes en pareja, en familia, solos o con grupo. Cada propuesta nace desde la escucha, el respeto por la tierra y la conexión con las comunidades.
           </p>
         </header>
-
+          <div className="absolute left-20 top-50 -translate-y-1/2 z-0 pointer-events-none">
+          <Image
+            src="/selfie-eve.jpg"
+            alt="Asesoría personalizada Kusi"
+            width={200}
+            height={300}
+            className="rounded-full w-28 h-28 md:w-40 md:h-40 object-cover "
+            />
+          </div>
         {/* MAIN CARD - mobile first (stack), desktop two-column */}
         <section className="bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-lg overflow-hidden">
           <div className="p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">

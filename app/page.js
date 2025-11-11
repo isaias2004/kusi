@@ -22,7 +22,7 @@ export default function Home() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-20 gap-8 sm:p-20">
       <div className='container flex flex-col items-center justify-center'>
         <NavBar />
-        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-630 md:mt-540 md:mb-30">
+        <main className="flex flex-col md:flex-row items-center justify-center gap-8 w-full mt-700 md:mt-580 md:mb-30">
           <Carousel />
           <div className="flex flex-col w-full items-end gap-3 relative z-10">
             <div className='flex flex-row w-full justify-between'>
