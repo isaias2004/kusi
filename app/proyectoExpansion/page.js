@@ -104,10 +104,10 @@ export default function Contacto() {
               </div>
 
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                <a href="mailto:kusiturismocomunitario@gmail.com" className="inline-block px-5 py-2 rounded-md border border-[#C77A4E] text-[#C77A4E] font-semibold hover:bg-[#fff7f0]">
+                <a href="mailto:kusiturismocomunitario@gmail.com" className="inline-block px-5 py-2 rounded-md border border-[#C77A4E] text-[#C77A4E] font-semibold hover:bg-[#fff7f0] max-w-max text-center">
                   Escribir a kusiturismocomunitario@gmail.com
                 </a>
-                <a href="https://cafecito.app/viajandoconkusi0" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E]">
+                <a href="https://cafecito.app/viajandoconkusi0" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] text-center">
                   Invitar un cafecito
                 </a>
               </div>

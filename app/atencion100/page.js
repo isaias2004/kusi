@@ -23,13 +23,13 @@ export default function Contacto() {
             Diseñamos itinerarios a tu medida: viajes en pareja, en familia, solos o con grupo. Cada propuesta nace desde la escucha, el respeto por la tierra y la conexión con las comunidades.
           </p>
         </header>
-          <div className="absolute left-20 top-50 -translate-y-1/2 z-0 pointer-events-none">
+          <div className="absolute left-0 top-70 md:top-50 md:left-20 -translate-y-1/2 z-0 pointer-events-none">
           <Image
             src="/selfie-eve.jpg"
             alt="Asesoría personalizada Kusi"
             width={200}
             height={300}
-            className="rounded-full w-28 h-28 md:w-40 md:h-40 object-cover "
+            className="rounded-full w-17 h-17 md:w-40 md:h-40 object-cover"
             />
           </div>
         {/* MAIN CARD - mobile first (stack), desktop two-column */}
@@ -73,7 +73,7 @@ export default function Contacto() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href="mailto:kusiturismo@gmail.com?subject=Quiero mi asesoría personalizada"
-                  className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition"
+                  className="inline-block bg-[#C77A4E] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#A65E2E] transition text-center"
                 >
                   ¡QUIERO MI ASESORÍA PERSONALIZADA!
                 </a>

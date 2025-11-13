@@ -71,7 +71,7 @@ export default function Experiencia() {
                 </a>
                 <a
                   href="mailto:kusiturismo@gmail.com?subject=Viaje%20Fin%20de%20A%C3%B1o%202025"
-                  className="w-full sm:w-auto inline-block border border-[#C77A4E] text-[#C77A4E] px-3 py-2 rounded-md text-sm font-semibold hover:bg-[#fff7f0] transition"
+                  className="w-full sm:w-auto inline-block border border-[#C77A4E] text-[#C77A4E] px-3 py-2 rounded-md text-sm font-semibold hover:bg-[#fff7f0] transition text-center"
                 >
                   Quiero saber más
                 </a>
