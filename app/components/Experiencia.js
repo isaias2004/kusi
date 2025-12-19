@@ -41,7 +41,7 @@ export default function Experiencia() {
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
                 <div className="flex-shrink-0 w-full md:w-28">
                   <Image
-                    src="/imagensobremi.jpg"
+                    src="/images/imagensobremi.jpg"
                     alt="Fin de Año 2025 - Quebrada de Humahuaca"
                     width={600}
                     height={900}

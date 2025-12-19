@@ -25,7 +25,7 @@ export default function quienesSomos() {
           {/* Imagen lado izquierdo en desktop, arriba en mobile */}
           <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
             <Image
-              src="/sobremi4.jpg"
+              src="/images/sobremi4.jpg"
               alt="Equipo Kusi"
               width={400}
               height={400}
@@ -50,7 +50,7 @@ export default function quienesSomos() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/sobremi3.png"
+                src="/images/sobremi3.png"
                 alt="Viñedos"
                 width={800}
                 height={600}
@@ -60,7 +60,7 @@ export default function quienesSomos() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/sobremi1.png"
+                src="/images/sobremi1.png"
                 alt="Hospedaje ecológico"
                 width={800}
                 height={600}
@@ -70,7 +70,7 @@ export default function quienesSomos() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/sobremi7.jpg"
+                src="/images/sobremi7.jpg"
                 alt="Gastronomía regional"
                 width={800}
                 height={600}
@@ -95,7 +95,7 @@ export default function quienesSomos() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/sobremi5.jpg"
+                src="/images/sobremi5.jpg"
                 alt="Viñedos"
                 width={800}
                 height={600}
@@ -105,7 +105,7 @@ export default function quienesSomos() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/sobremi2.png"
+                src="/images/sobremi2.png"
                 alt="Hospedaje ecológico"
                 width={800}
                 height={600}
@@ -115,7 +115,7 @@ export default function quienesSomos() {
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/sobremi6.jpg"
+                src="/images/sobremi6.jpg"
                 alt="Gastronomía regional"
                 width={800}
                 height={600}

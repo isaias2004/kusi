@@ -13,7 +13,7 @@ export default function NavBar() {
                     <div className="flex items-center">
                       <a href="https://www.instagram.com/kusi.turismo/" target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/instagram.png"
+                          src="/images/instagram.png"
                           alt="logo kusi"
                           width={35}
                           height={30}
@@ -23,7 +23,7 @@ export default function NavBar() {
                       <a href='https://www.tiktok.com/@viajandoconkusi' target='_blank' rel="noopener noreferrer">
                         <Image
                           className='ml-2 w-5 h-6 md:w-[25px] md:h-[30px]'
-                          src="/tik-tok.png"
+                          src="/images/tik-tok.png"
                           alt="logo kusi"
                           width={25}
                           height={30}

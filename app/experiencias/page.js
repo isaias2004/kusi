@@ -31,13 +31,13 @@ export default function experiencias() {
         <section className="mb-12">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/experiencia6.jpg" alt="Viñedos" width={1200} height={800} className="w-full h-64 object-cover" />
+              <Image src="/images/experiencia6.jpg" alt="Viñedos" width={1200} height={800} className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/bailando.jpg" alt="Hospedaje" width={1200} height={800} className="w-full h-64 object-cover" />
+              <Image src="/images/bailando.jpg" alt="Hospedaje" width={1200} height={800} className="w-full h-64 object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <Image src="/mochila-verde.jpg" alt="Gastronomía" width={1200} height={800} className="w-full h-64 object-cover" />
+              <Image src="/images/mochila-verde.jpg" alt="Gastronomía" width={1200} height={800} className="w-full h-64 object-cover" />
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export default function experiencias() {
           <article className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
             <div className="overflow-hidden rounded-md mb-4">
               <Image
-                src="/manosdemujeres.jpg"
+                src="/images/manosdemujeres.jpg"
                 alt="Manos de mujeres - cocina regional"
                 width={600}
                 height={900}
@@ -79,7 +79,7 @@ export default function experiencias() {
           <article className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
             <div className="overflow-hidden rounded-md mb-4">
               <Image
-                src="/vinitoymontaña.jpg"
+                src="/images/vinitoymontaña.jpg"
                 alt="Vinito y Montaña"
                 width={600}
                 height={900}
@@ -104,7 +104,7 @@ export default function experiencias() {
           <article className="p-6 rounded-2xl bg-gradient-to-b from-white to-[#fff7f0] dark:from-gray-900 dark:to-gray-800 shadow-lg">
             <div className="overflow-hidden rounded-md mb-4">
               <Image
-                src="/caminata.jpg"
+                src="/images/caminata.jpg"
                 alt="Caminar hacia dentro"
                 width={600}
                 height={900}
@@ -129,7 +129,7 @@ export default function experiencias() {
           <article className="p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-lg">
             <div className="overflow-hidden rounded-md mb-4">
               <Image
-                src="/salidasgrandes.jpg"
+                src="/images/salidasgrandes.jpg"
                 alt="Salinas Grandes"
                 width={600}
                 height={900}

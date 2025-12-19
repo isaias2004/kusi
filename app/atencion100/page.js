@@ -25,7 +25,7 @@ export default function Contacto() {
         </header>
           <div className="absolute left-0 top-70 md:top-50 md:left-20 -translate-y-1/2 z-0 pointer-events-none">
           <Image
-            src="/selfie-eve.jpg"
+            src="/images/selfie-eve.jpg"
             alt="Asesoría personalizada Kusi"
             width={200}
             height={300}
@@ -89,7 +89,7 @@ export default function Contacto() {
             {/* RIGHT / IMAGE */}
             <figure className="w-full md:w-auto rounded-xl overflow-hidden shadow-md md:self-start">
               <Image
-                src="/experiencia5.jpg"
+                src="/images/experiencia5.jpg"
                 alt="Asesoría personalizada Kusi"
                 width={800}
                 height={800}

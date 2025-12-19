@@ -28,7 +28,7 @@ export default function Home() {
             <div className='flex flex-row w-full justify-between'>
               <Image 
                 className='opacity-50 ml-15 hidden md:block'
-                src="/12.png"
+                src="/images/12.png"
                 alt="logo kusi"
                 width={250}
                 height={5}

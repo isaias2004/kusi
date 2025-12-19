@@ -10,7 +10,7 @@ export default function WhatsAppFloatingButton() {
       aria-label="WhatsApp"
     >
       <Image
-        src="/whatsapp.png"
+        src="/images/whatsapp.png"
         alt="WhatsApp"
         width={40}
         height={40}
